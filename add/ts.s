@@ -19,9 +19,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 start:
     mov r0, #1          @ r0 = 1
     MOV R1, #2          @ r1 = 2
-    ADD R1, R1, R0      // r1 = r1 + r0
-    ldr r2, =result     /* result = r1 */
-    str r1, [r2]
+    ADD R2, R1, R0      // r2 = r1 + r0
+    ldr r3, =result     /* result = r2 */
+    str r2, [r3]
 stop: b stop
     .data
 result: .word 0         /* a word location */
